@@ -1,3 +1,5 @@
+package OOPS;
+
 public class DemoImmutableClass {
     public static void main(String[] args) {
         College college = new College("EIT","Faridabad");
@@ -6,6 +8,7 @@ public class DemoImmutableClass {
         Student student = new Student(20,"Sharad",college);
         student.getCollege().name = "Lingayas";
         System.out.println(college.name);   // Mutation can be possible even without inheriting any class
+        
     }
 }
 
@@ -18,7 +21,7 @@ final class Student{
     Student(int age, String name, College college){
         this.name = name;
         this.age = age;
-        this.college = college;
+        this.college = new College(college.name,college.address);
     }
 
     int getAge(){
@@ -28,7 +31,7 @@ final class Student{
         return this.name;
     }
     College getCollege(){
-        return this.college;
+        return new College(this.college.name,this.college.address);   // This is defensive construction
     }
 }
 
