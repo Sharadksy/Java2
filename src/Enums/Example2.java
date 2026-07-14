@@ -5,7 +5,8 @@ public class Example2 {
     enum TShirtSize{
         Small(30),
         Medium(34),
-        Large(39);
+        Large(39),
+        ExtraLarge(42);
 
         private final int chestWidth;
 
@@ -26,5 +27,7 @@ public class Example2 {
         System.out.println("Medium width is: "+ size1.getChestSize() +" inches.");
         System.out.println("Large width is: "+ size2.getChestSize() +" inches.");
         System.out.println("Small width is: "+ size3.getChestSize() +" inches.");
+        System.out.println("Extra Large width is: "+TShirtSize.ExtraLarge+ " inches");
+
     }
 }
