@@ -7,6 +7,7 @@ public class Main {
         Task task3 = new Task("SS202", "Exercise",Priority.CRITICAL,Status.IN_PROGRESS);
         Task task4 = new Task("SS203","Listening Songs", Priority.LOW, Status.REVIEW);
         Task task5 = new Task("SS209","Walking",Priority.HIGH,Status.TODO);
+        Task task6 = new Task("SA201","Reading Book",Priority.MEDIUM, Status.DONE);
 
         TaskBoard taskBoard = new TaskBoard();
         taskBoard.addTask(task1);
@@ -14,6 +15,7 @@ public class Main {
         taskBoard.addTask(task3);
         taskBoard.addTask(task4);
         taskBoard.addTask(task5);
+        taskBoard.addTask(task6);
         taskBoard.generateBoardSummary();
     }
 }
