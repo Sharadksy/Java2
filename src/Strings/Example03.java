@@ -1,4 +1,6 @@
 package Strings;
+// Mutability, Thread Safety but slow --> StringBuffer
+// Mutability, No Thread Safety but enhanced performance --> StringBuilder
 
 public class Example03 {
     public static void main(String[] args) throws InterruptedException{
