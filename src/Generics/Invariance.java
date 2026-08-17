@@ -5,16 +5,11 @@ import java.util.List;
 
 public class Invariance {
     public static void main(String[] args) {
-//        Animal animal = new Dog();
-//        animal.eat();
-//        animal.walk();
-        //animal.bark(); cannot be called
-
-       // List<Dog> dogs = new ArrayList<>();
+        List<Dog> dogs = new ArrayList<>();
        // List<Animal> animals = dogs; This is invariance but safe, as it gives compile time error
 
 
-        // Below is the invariance in array. They aren't allowing animal object to be assigned to animal.
+        // Below is the covariance in array. They aren't allowing animal object to be assigned to animal.
 //        Dog[] dogs = new Dog[10];
 //        Animal[] animals = dogs;
 //
@@ -24,8 +19,6 @@ public class Invariance {
 //        animals[3] = new Dog();
 //        animals[4] = new Dog();
 //        animals[5] = new Animal();
-//
-//
 //        for(Animal an: animals){
 //            if (an==null){
 //                continue;
