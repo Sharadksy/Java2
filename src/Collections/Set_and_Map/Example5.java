@@ -14,7 +14,13 @@ public class Example5 {
         s1.add(10);
 
        // SortedSet Interface
-        System.out.println(s1.headSet( 7));
-        System.out.println(s1.first());
+
+        System.out.println(s1.headSet( 7)); // toElement is exclusive
+        System.out.println(s1.first()); // print the first node
+        s1.add(8); // adds the element
+        System.out.println(s1);
+        System.out.println(s1.subSet(3, 9)); // fromElement is inclusive and toElement is exclusive
+        System.out.println(s1.tailSet(7)); // fromElement is inclusive
+        System.out.println(s1.lower(7)); // prints the nearest value lower than e
     }
 }
