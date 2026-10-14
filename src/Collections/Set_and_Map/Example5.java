@@ -14,6 +14,7 @@ public class Example5 {
         s1.add(10);
 
        // SortedSet Interface
+        System.out.println(s1.headSet( 7));
         System.out.println(s1.first());
     }
 }
